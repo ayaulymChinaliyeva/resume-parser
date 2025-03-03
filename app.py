@@ -4,7 +4,9 @@ import pandas as pd
 import sqlite3
 
 # 🟢 API Key for hh.ru
-HH_API_TOKEN = "your_hh_api_token"
+
+HH_API_TOKEN = st.secrets["HH_API_TOKEN"]
+
 
 # 🟢 Database Setup (Runs on Streamlit Cloud)
 DB_FILE = "candidates.db"
